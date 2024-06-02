@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+            "label": "reset_db",
+            "command": "./reset_db.sh", // Could be any other shell command
+            "type": "shell"
+        }
+	]
+}

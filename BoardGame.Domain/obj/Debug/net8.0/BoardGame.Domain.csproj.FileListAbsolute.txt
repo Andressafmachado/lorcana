@@ -1,0 +1,12 @@
+/Users/andressamachado/boardGame1.1/BoardGame.Domain/bin/Debug/net8.0/BoardGame.Domain.deps.json
+/Users/andressamachado/boardGame1.1/BoardGame.Domain/bin/Debug/net8.0/BoardGame.Domain.dll
+/Users/andressamachado/boardGame1.1/BoardGame.Domain/bin/Debug/net8.0/BoardGame.Domain.pdb
+/Users/andressamachado/boardGame1.1/BoardGame.Domain/obj/Debug/net8.0/BoardGame.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andressamachado/boardGame1.1/BoardGame.Domain/obj/Debug/net8.0/BoardGame.Domain.AssemblyInfoInputs.cache
+/Users/andressamachado/boardGame1.1/BoardGame.Domain/obj/Debug/net8.0/BoardGame.Domain.AssemblyInfo.cs
+/Users/andressamachado/boardGame1.1/BoardGame.Domain/obj/Debug/net8.0/BoardGame.Domain.csproj.CoreCompileInputs.cache
+/Users/andressamachado/boardGame1.1/BoardGame.Domain/obj/Debug/net8.0/BoardGame.Domain.sourcelink.json
+/Users/andressamachado/boardGame1.1/BoardGame.Domain/obj/Debug/net8.0/BoardGame.Domain.dll
+/Users/andressamachado/boardGame1.1/BoardGame.Domain/obj/Debug/net8.0/refint/BoardGame.Domain.dll
+/Users/andressamachado/boardGame1.1/BoardGame.Domain/obj/Debug/net8.0/BoardGame.Domain.pdb
+/Users/andressamachado/boardGame1.1/BoardGame.Domain/obj/Debug/net8.0/ref/BoardGame.Domain.dll

@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "C#: boardGame1.1",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/boardGame1.1.csproj",
+            "launchConfigurationId": "TargetFramework=;boardGame1.1",
+            "preLaunchTask": "reset_db"
+        }
+    ]
+}
