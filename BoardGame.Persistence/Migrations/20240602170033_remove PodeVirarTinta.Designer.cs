@@ -3,6 +3,7 @@ using System;
 using EFExemplo;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace boardGame1._1.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20240602170033_remove PodeVirarTinta")]
+    partial class removePodeVirarTinta
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,9 +56,6 @@ namespace boardGame1._1.Migrations
 
                     b.Property<int>("Número")
                         .HasColumnType("integer");
-
-                    b.Property<bool>("PodeVirarTinta")
-                        .HasColumnType("boolean");
 
                     b.Property<int>("Raridade")
                         .HasColumnType("integer");

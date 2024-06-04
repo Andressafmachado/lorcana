@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dFr538YbZK68Cd+d1DXr1W3ud4M/hvgDSaWg9f/nc5hf7icB1uP80wX8x+ERwgJc8oppVPF94Icxrk9WsOsQNQ==",
+  "dgSpecHash": "8fqePqAIPBG3gYGYzTY14FhBgkaT3FaaUv6HAfcq3vMr5n0R4SQZaKfCC3EPCMl+c5smTrDTClaD8yK7X3ehfg==",
   "success": true,
-  "projectFilePath": "/Users/andressamachado/boardGame1.1/BoardGame.Api/BoardGame.Api.csproj",
+  "projectFilePath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/BoardGame.Api.csproj",
   "expectedPackageFiles": [
     "/Users/andressamachado/.nuget/packages/microsoft.aspnetcore.openapi/8.0.1/microsoft.aspnetcore.openapi.8.0.1.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/microsoft.entityframeworkcore/8.0.4/microsoft.entityframeworkcore.8.0.4.nupkg.sha512",

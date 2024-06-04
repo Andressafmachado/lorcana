@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0kdPXEAjuNc8Cnlpy5uYVUxyGvVZtXAw7ZMpjoOZO689XcctxzaV62HGtvGc28VczNlKAYbtpmULo15o0d9F4Q==",
+  "dgSpecHash": "bfhun+wlhZOnTlLQW+6B1H0nku6HJZUGpeHd73pwWHWm0rJ5Su9TubMMS4NPwjdaV5ZCAmV5zZkR+Da7YQoOrg==",
   "success": true,
-  "projectFilePath": "/Users/andressamachado/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj",
+  "projectFilePath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

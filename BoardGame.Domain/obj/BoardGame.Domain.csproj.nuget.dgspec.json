@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/andressamachado/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj": {}
+    "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj": {}
   },
   "projects": {
-    "/Users/andressamachado/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj": {
+    "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andressamachado/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj",
+        "projectUniqueName": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj",
         "projectName": "BoardGame.Domain",
-        "projectPath": "/Users/andressamachado/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj",
+        "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj",
         "packagesPath": "/Users/andressamachado/.nuget/packages/",
-        "outputPath": "/Users/andressamachado/boardGame1.1/BoardGame.Domain/obj/",
+        "outputPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/andressamachado/.nuget/NuGet/NuGet.Config"

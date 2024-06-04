@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using EFExemplo;
 using Microsoft.EntityFrameworkCore;
+using boardGame;
+
+
 
 namespace boardGame.Controllers
 {
@@ -8,25 +11,24 @@ namespace boardGame.Controllers
     [Route("api/[controller]")]
     public class CartasController : ControllerBase
     {
-        private readonly Context _context;
 
-        public CartasController(Context context)
+        private readonly ICrud _crud;
+
+        public CartasController(ICrud crud)
         {
-            _context = context;
+            _crud = crud;
         }
 
-        // GET: api/Cartas
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Carta>>> GetCartas()
         {
-            return await _context.Cartas.ToListAsync();
+            return await _crud.GetCartas();
         }
 
-        // GET: api/Cartas/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Carta>> GetCarta(int id)
         {
-            var carta = await _context.Cartas.FindAsync(id);
+            var carta = await _crud.GetCarta(id);
 
             if (carta == null)
             {
@@ -36,42 +38,19 @@ namespace boardGame.Controllers
             return carta;
         }
 
-        // POST: api/Cartas
         [HttpPost]
         public async Task<ActionResult<Carta>> PostCarta(Carta carta)
         {
-            _context.Cartas.Add(carta);
-            await _context.SaveChangesAsync();
+            var cartaCriada = await _crud.PostCarta(carta);
 
-            return CreatedAtAction(nameof(GetCarta), new { id = carta.CartaId }, carta);
+            return CreatedAtAction(nameof(GetCarta), new { id = cartaCriada.CartaId }, cartaCriada);
         }
 
-        // PUT: api/Cartas/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCarta(int id, Carta carta)
+        public async Task<IActionResult> PutCarta(Carta carta)
         {
-            if (id != carta.CartaId)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(carta).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!CartaExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            
+            await _crud.PutCarta(carta);
 
             return NoContent();
         }
@@ -80,21 +59,9 @@ namespace boardGame.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCarta(int id)
         {
-            var carta = await _context.Cartas.FindAsync(id);
-            if (carta == null)
-            {
-                return NotFound();
-            }
-
-            _context.Cartas.Remove(carta);
-            await _context.SaveChangesAsync();
+            await _crud.DeleteCarta(id);
 
             return NoContent();
-        }
-
-        private bool CartaExists(int id)
-        {
-            return _context.Cartas.Any(e => e.CartaId == id);
         }
     }
 }

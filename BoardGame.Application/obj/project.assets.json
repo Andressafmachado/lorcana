@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "BoardGame.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BoardGame.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BoardGame.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BoardGame.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BoardGame.Domain/BoardGame.Domain.csproj",
+      "msbuildProject": "../BoardGame.Domain/BoardGame.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "BoardGame.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/andressamachado/.nuget/packages/": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/andressamachado/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj",
+      "projectUniqueName": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj",
       "projectName": "BoardGame.Application",
-      "projectPath": "/Users/andressamachado/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj",
+      "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj",
       "packagesPath": "/Users/andressamachado/.nuget/packages/",
-      "outputPath": "/Users/andressamachado/boardGame1.1/BoardGame.Application/obj/",
+      "outputPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/andressamachado/.nuget/NuGet/NuGet.Config"
@@ -31,7 +50,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj": {
+              "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

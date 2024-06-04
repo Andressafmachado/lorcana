@@ -11,9 +11,9 @@ public class Carta
     public CoresDaTinta Cor { get; set; }
     public string? Descrição { get; set; }
     public int? EfeitoId { get; set; }
-    public Efeito Efeito { get; set; }
+    public Efeito? Efeito { get; set; }
     public int DeckId { get; set; }
-    public Deck Deck { get; set; }
+    public Deck? Deck { get; set; }
     public int Número { get; set; }
     public bool PodeVirarTinta { get; set; }
     

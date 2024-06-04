@@ -5,9 +5,8 @@
             "name": "C#: boardGame1.1",
             "type": "dotnet",
             "request": "launch",
-            "projectPath": "${workspaceFolder}/boardGame1.1.csproj",
-            "launchConfigurationId": "TargetFramework=;boardGame1.1",
-            "preLaunchTask": "reset_db"
+            "projectPath": "${workspaceFolder}/BoardGame.Api/BoardGame.Api.csproj",
+            "launchConfigurationId": "TargetFramework=8.0;boardGame1.1"
         }
     ]
 }

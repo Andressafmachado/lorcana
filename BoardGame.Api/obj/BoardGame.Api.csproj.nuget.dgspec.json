@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/andressamachado/boardGame1.1/BoardGame.Api/BoardGame.Api.csproj": {}
+    "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/BoardGame.Api.csproj": {}
   },
   "projects": {
-    "/Users/andressamachado/boardGame1.1/BoardGame.Api/BoardGame.Api.csproj": {
+    "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/BoardGame.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andressamachado/boardGame1.1/BoardGame.Api/BoardGame.Api.csproj",
+        "projectUniqueName": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/BoardGame.Api.csproj",
         "projectName": "BoardGame.Api",
-        "projectPath": "/Users/andressamachado/boardGame1.1/BoardGame.Api/BoardGame.Api.csproj",
+        "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/BoardGame.Api.csproj",
         "packagesPath": "/Users/andressamachado/.nuget/packages/",
-        "outputPath": "/Users/andressamachado/boardGame1.1/BoardGame.Api/obj/",
+        "outputPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/andressamachado/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/andressamachado/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj": {
-                "projectPath": "/Users/andressamachado/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj"
+              "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj": {
+                "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj"
+              },
+              "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj": {
+                "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj"
+              },
+              "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj": {
+                "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj"
               }
             }
           }
@@ -78,14 +84,71 @@
         }
       }
     },
-    "/Users/andressamachado/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj": {
+    "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andressamachado/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj",
-        "projectName": "BoardGame.Domain",
-        "projectPath": "/Users/andressamachado/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj",
+        "projectUniqueName": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj",
+        "projectName": "BoardGame.Application",
+        "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj",
         "packagesPath": "/Users/andressamachado/.nuget/packages/",
-        "outputPath": "/Users/andressamachado/boardGame1.1/BoardGame.Domain/obj/",
+        "outputPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/andressamachado/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj": {
+                "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj",
+        "projectName": "BoardGame.Domain",
+        "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj",
+        "packagesPath": "/Users/andressamachado/.nuget/packages/",
+        "outputPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/andressamachado/.nuget/NuGet/NuGet.Config"
@@ -131,14 +194,14 @@
         }
       }
     },
-    "/Users/andressamachado/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj": {
+    "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andressamachado/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj",
+        "projectUniqueName": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj",
         "projectName": "BoardGame.Persistence",
-        "projectPath": "/Users/andressamachado/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj",
+        "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj",
         "packagesPath": "/Users/andressamachado/.nuget/packages/",
-        "outputPath": "/Users/andressamachado/boardGame1.1/BoardGame.Persistence/obj/",
+        "outputPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/andressamachado/.nuget/NuGet/NuGet.Config"
@@ -153,8 +216,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/andressamachado/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj": {
-                "projectPath": "/Users/andressamachado/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj"
+              "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj": {
+                "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj"
               }
             }
           }

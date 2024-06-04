@@ -38,10 +38,12 @@ namespace boardGame.Controllers
         [HttpPost]
         public async Task<ActionResult<Deck>> PostDeck(Deck deck)
         {
+            // add try catch bdupdateexception
+            // add middleware 
             _context.Decks.Add(deck);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
-            return Ok();
+            return CreatedAtAction(nameof(PostDeck), new { id = deck.DeckId }, deck);
         }
 
         [HttpPut("{id}")]
@@ -70,7 +72,7 @@ namespace boardGame.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok(deck);
         }
 
         [HttpDelete("{id}")]
@@ -85,7 +87,7 @@ namespace boardGame.Controllers
             _context.Decks.Remove(deck);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok();
         }
 
         private bool DeckExiste(int id)
