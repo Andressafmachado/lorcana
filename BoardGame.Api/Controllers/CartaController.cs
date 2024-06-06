@@ -1,20 +1,16 @@
-using Microsoft.AspNetCore.Mvc;
-using EFExemplo;
-using Microsoft.EntityFrameworkCore;
 using boardGame;
+using Microsoft.AspNetCore.Mvc;
 
-
-
-namespace boardGame.Controllers
+namespace BoardGame.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     public class CartasController : ControllerBase
     {
 
-        private readonly ICrud _crud;
+        private readonly ICrud<Carta> _crud;
 
-        public CartasController(ICrud crud)
+        public CartasController(ICrud<Carta> crud)
         {
             _crud = crud;
         }
@@ -22,13 +18,13 @@ namespace boardGame.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Carta>>> GetCartas()
         {
-            return await _crud.GetCartas();
+            return await _crud.GetAll();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Carta>> GetCarta(int id)
         {
-            var carta = await _crud.GetCarta(id);
+            var carta = await _crud.GetById(id);
 
             if (carta == null)
             {
@@ -41,7 +37,7 @@ namespace boardGame.Controllers
         [HttpPost]
         public async Task<ActionResult<Carta>> PostCarta(Carta carta)
         {
-            var cartaCriada = await _crud.PostCarta(carta);
+            var cartaCriada = await _crud.Create(carta);
 
             return CreatedAtAction(nameof(GetCarta), new { id = cartaCriada.CartaId }, cartaCriada);
         }
@@ -50,7 +46,7 @@ namespace boardGame.Controllers
         public async Task<IActionResult> PutCarta(Carta carta)
         {
             
-            await _crud.PutCarta(carta);
+            await _crud.Update(carta);
 
             return NoContent();
         }
@@ -59,7 +55,7 @@ namespace boardGame.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCarta(int id)
         {
-            await _crud.DeleteCarta(id);
+            await _crud.Delete(id);
 
             return NoContent();
         }

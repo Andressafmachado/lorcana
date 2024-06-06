@@ -18,9 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BoardGame.Domain\BoardGame.Domain.csproj" />
-    <ProjectReference Include="..\BoardGame.Application\BoardGame.Application.csproj" />
     <ProjectReference Include="..\BoardGame.Persistence\BoardGame.Persistence.csproj" />
+    <ProjectReference Include="..\BoardGame.Application\BoardGame.Application.csproj" />
   </ItemGroup>
 
 </Project>

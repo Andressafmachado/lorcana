@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9FVW6InS2NpUZ/V4axjASgxfGTyLSjlo23y3QQNLPv8=",
+  "Source": "BoardGame.Api",
+  "BasePath": "_content/BoardGame.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

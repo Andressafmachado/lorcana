@@ -29,9 +29,6 @@
               "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj": {
                 "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj"
               },
-              "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj": {
-                "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj"
-              },
               "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj": {
                 "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj"
               }
@@ -114,9 +111,6 @@
             "projectReferences": {
               "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj": {
                 "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj"
-              },
-              "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj": {
-                "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj"
               }
             }
           }
@@ -243,8 +237,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj": {
-                "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Domain/BoardGame.Domain.csproj"
+              "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj": {
+                "projectPath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj"
               }
             }
           }
