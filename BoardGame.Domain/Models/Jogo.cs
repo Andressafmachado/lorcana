@@ -21,29 +21,13 @@ public class Jogo
     //     _servicoDeNotificacao = new ServicoDeNotificacao();
     // }
 
-    public void SetUp(int[] jogadoresId)
+    public void SetUp(List<Jogador> jogador)
     {
-        var jogoId = PegarJogoId(CriarJogoNoBD());
-        AdicionarJogadores(jogadoresId, jogoId);
-
-        if (jogadoresId.Length > 4 || jogadoresId.Length < 2)
+        
+        Jogadores.AddRange(jogador);
+        foreach (var jogadorLocal in Jogadores)
         {
-            // _servicoDeNotificacao.MostrarErro("Para jogar Lorcana voce precisa de 2 a 4 jogadores.");
-            return;
-        }
-
-        SortearPrimeiro(jogadoresId);
-
-        foreach (var id in jogadoresId)
-        {
-            // var jogador = context.Jogadores
-            // .Include(j => j.Deck)
-            // .ThenInclude(d => d.Cartas)
-            // .Include(c => c.CartasNaMão)
-            // .FirstOrDefault(j => j.JogadorId == id);
-
-            // jogador.ComprarCarta(7);
-            // OferecerMulligan(jogador);
+            jogadorLocal.ComprarCarta(7);
         }
     }
 
@@ -93,16 +77,11 @@ public class Jogo
         // _servicoDeNotificacao.MostrarMensagem($"Jogador sorteado para comecar foi {JogadorNaVez.Nome}");
     }
 
-    private void OferecerMulligan(Jogador jogador)
+    public static void OferecerMulligan(Jogador? jogador, Boolean resposta, List<Carta>? cartas = null)
     {
-        // _servicoDeNotificacao.MostrarMensagem("Gostaria de trocar quantas cartas da mão inicial?");
-        // _servicoDeNotificacao.MostrarMensagem("[A] - sim, iniciar Mulligan");
-        // _servicoDeNotificacao.MostrarMensagem("[B] - não");
-        var resposta = Console.ReadLine();
-    
-
-        if(resposta == "A"){
-            jogador.ExecutarMulligan();
+        if (resposta)
+        {
+            jogador.ExecutarMulligan(cartas);
         }
     }
 

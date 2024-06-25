@@ -1,33 +1,33 @@
 using boardGame;
 using BoardGame.Domain.Repositories;
 
-namespace BoardGame.Application.Decks;
+namespace BoardGame.Application.Jogadores;
 
-public class JogadorService : ICrud<Deck>
+public class JogadorService : ICrudService<Jogador>
 {
     
-    private readonly IRepository<Deck> _repository;
+    private readonly IRepository<Jogador> _repository;
 
-    public JogadorService(IRepository<Deck> repository)
+    public JogadorService(IRepository<Jogador> repository)
     {
         _repository = repository;
     }
-    public async Task<List<Deck>> GetAll()
+    public async Task<List<Jogador>> GetAll()
     {
         return await _repository.GetAll();
     }
 
-    public async Task<Deck> GetById(int id)
+    public async Task<Jogador> GetById(int id)
     {
         return await _repository.GetById(id);
     }
 
-    public async Task<Deck> Create(Deck entity)
+    public async Task<Jogador> Create(Jogador entity)
     {
         return await _repository.Create(entity);
     }
 
-    public async Task<Deck> Update(Deck entity)
+    public async Task<Jogador> Update(Jogador entity)
     {
        return await _repository.Update(entity);
     }

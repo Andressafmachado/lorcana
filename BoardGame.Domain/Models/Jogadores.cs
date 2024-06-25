@@ -5,8 +5,6 @@ public class Jogador
 {
     public string? Nome { get; set; }
     public int JogadorId { get; set; }
-    public int JogoId { get; set; }
-    public Jogo Jogos { get; set; }
     public int DeckId { get; set; }
     public Deck? Deck { get; set; }
 
@@ -47,24 +45,15 @@ public class Jogador
         }
     }
 
-    public void ExecutarMulligan() {
-
-
-
-        foreach (var carta in CartasNaMão)
-        {
-            
-            Console.WriteLine($"{carta.CartaId}");
-                
-            
-        }
+    public void ExecutarMulligan(List<Carta> cartas) {
+        ComprarCarta(cartas.Count);
+        DevolverAoDeck(cartas);
+        //add shuffle
     }
 
-    public void DevolverAoDeck(Carta carta) {
-        //devolver ao final?
-        Deck.Cartas.Add(carta);
-        // context.SaveChanges();
-
+    public void DevolverAoDeck(List<Carta> cartas) {
+        Deck.Cartas.AddRange(cartas);
+        CartasNaMão.RemoveRange(0, cartas.Count);
     }
 
     public void ExecutarAçõesDoTurno(bool turnoInitial = false)

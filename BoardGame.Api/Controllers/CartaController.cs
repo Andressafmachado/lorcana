@@ -8,23 +8,23 @@ namespace BoardGame.Api.Controllers
     public class CartasController : ControllerBase
     {
 
-        private readonly ICrud<Carta> _crud;
+        private readonly ICrudService<Carta> _crudService;
 
-        public CartasController(ICrud<Carta> crud)
+        public CartasController(ICrudService<Carta> crudService)
         {
-            _crud = crud;
+            _crudService = crudService;
         }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Carta>>> GetCartas()
         {
-            return await _crud.GetAll();
+            return await _crudService.GetAll();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Carta>> GetCarta(int id)
         {
-            var carta = await _crud.GetById(id);
+            var carta = await _crudService.GetById(id);
 
             if (carta == null)
             {
@@ -37,7 +37,7 @@ namespace BoardGame.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<Carta>> PostCarta(Carta carta)
         {
-            var cartaCriada = await _crud.Create(carta);
+            var cartaCriada = await _crudService.Create(carta);
 
             return CreatedAtAction(nameof(GetCarta), new { id = cartaCriada.CartaId }, cartaCriada);
         }
@@ -46,7 +46,7 @@ namespace BoardGame.Api.Controllers
         public async Task<IActionResult> PutCarta(Carta carta)
         {
             
-            await _crud.Update(carta);
+            await _crudService.Update(carta);
 
             return NoContent();
         }
@@ -55,7 +55,7 @@ namespace BoardGame.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCarta(int id)
         {
-            await _crud.Delete(id);
+            await _crudService.Delete(id);
 
             return NoContent();
         }

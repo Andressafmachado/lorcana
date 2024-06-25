@@ -1,0 +1,12 @@
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/bin/Debug/net8.0/BoardGame.Infrastructure.deps.json
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/bin/Debug/net8.0/BoardGame.Infrastructure.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/bin/Debug/net8.0/BoardGame.Infrastructure.pdb
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/obj/Debug/net8.0/BoardGame.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/obj/Debug/net8.0/BoardGame.Infrastructure.AssemblyInfoInputs.cache
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/obj/Debug/net8.0/BoardGame.Infrastructure.AssemblyInfo.cs
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/obj/Debug/net8.0/BoardGame.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/obj/Debug/net8.0/BoardGame.Infrastructure.sourcelink.json
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/obj/Debug/net8.0/BoardGame.Infrastructure.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/obj/Debug/net8.0/refint/BoardGame.Infrastructure.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/obj/Debug/net8.0/BoardGame.Infrastructure.pdb
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/obj/Debug/net8.0/ref/BoardGame.Infrastructure.dll

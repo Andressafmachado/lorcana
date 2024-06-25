@@ -1,0 +1,41 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3ca3bf50_002D4ac8_002D45ee_002D9416_002D357130db2430/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="JogoTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.JogoTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=67a794f4_002D1621_002D47a3_002Dafad_002D8c02f1ddcf70/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="OferecerMulligan_JogadorNegaEPermaneceCom7CartasNaMao #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.JogoTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=74f55017_002Dc381_002D42d0_002D8586_002D8db893944636/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Solution /&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9a7b7a79_002D6058_002D4c9c_002Dae6b_002D953f3c3d46fb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="OferecerMulligan_JogadorNegaEPermaneceCom7CartasNaMao" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.JogoTests.OferecerMulligan_JogadorNegaEPermaneceCom7CartasNaMao&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=baf1104a_002D754a_002D48c1_002D8444_002D62fb81f6e2dc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="OferecerMulligan_JogadorPodeNegarMulliganEPermanecerComAsMesmasCartas" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.JogoTests.OferecerMulligan_JogadorPodeNegarMulliganEPermanecerComAsMesmasCartas&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=de6d139e_002D4a0f_002D46ea_002D9b63_002D1499e947b470/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="OferecerMulligan_JogadorPodeNegarMulliganEPermanecerComAsMesmasCartas #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.JogoTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fe07c634_002D8884_002D424d_002D992f_002D00db33167195/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="OferecerMulligan_JogadorPodeAceitarETrocarTodasAsCartas" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.JogoTests.OferecerMulligan_JogadorPodeAceitarETrocarTodasAsCartas&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.JogoTests.OferecerMulligan_JogadorPodeNegarMulliganEPermanecerComAsMesmasCartas&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.Services.CartaServiceTests.Create_CriarUmaCarta&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.Services.CartaServiceTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.Deck.Validators.DeckMaximumCardsCopyTest.ValidateMaximumCardsCopy_WhenDeckHasMoreThanFourCopiesOfTheSameCard_ShouldReturnFalse&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.Deck.Validators.DeckMaximumCardsCopyTest.ValidateMaximumCardsCopy_WhenDeckHasLessThanFourCopiesOfTheSameCard_ShouldReturnTrue&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.Deck.Validators.DeckMaximumCardsCopyTest&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.Deck.Validators.DeckNullOrEmptyTest.Validate_WhenDeckIsNull_ShouldReturnFalse&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

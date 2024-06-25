@@ -1,15 +1,17 @@
-using Microsoft.EntityFrameworkCore;
 using boardGame;
 using BoardGame.Application.Cartas;
 using BoardGame.Application.Decks;
-using BoardGame.Domain.Repositories;
+using BoardGame.Application.Efeitos;
+using BoardGame.Application.Jogadores;
 using BoardGame.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddTransient<ICrud<Carta>, CartasService>();
-builder.Services.AddTransient<ICrud<Deck>, DeckService>();
+builder.Services.AddTransient<ICrudService<Carta>, CartasService>();
+builder.Services.AddTransient<ICrudService<Deck>, DeckService>();
+builder.Services.AddTransient<ICrudService<Efeito>, EfeitoService>();
+builder.Services.AddTransient<ICrudService<Jogador>, JogadorService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

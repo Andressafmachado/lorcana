@@ -20,7 +20,9 @@
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/bin/Debug/net8.0/BoardGame.Persistence.runtimeconfig.json
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/bin/Debug/net8.0/BoardGame.Persistence.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/bin/Debug/net8.0/BoardGame.Persistence.pdb
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/bin/Debug/net8.0/BoardGame.Application.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/bin/Debug/net8.0/BoardGame.Domain.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/bin/Debug/net8.0/BoardGame.Application.pdb
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/bin/Debug/net8.0/BoardGame.Domain.pdb
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/obj/Debug/net8.0/BoardGame.Persistence.csproj.AssemblyReference.cache
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/obj/Debug/net8.0/BoardGame.Persistence.GeneratedMSBuildEditorConfig.editorconfig

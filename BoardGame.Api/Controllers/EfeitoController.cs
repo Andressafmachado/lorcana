@@ -5,58 +5,58 @@ namespace BoardGame.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class DeckController : Controller
+public class EfeitoController : Controller
 {
     // GET
-    private readonly ICrud<Deck> _crud;
+    private readonly ICrudService<Efeito> _crudService;
 
-    public DeckController(ICrud<Deck> crud)
+    public EfeitoController(ICrudService<Efeito> crudService)
     {
-        _crud = crud;
+        _crudService = crudService;
     }
     
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Deck>>> ListDecks()
+    public async Task<ActionResult<IEnumerable<Efeito>>> ListEfeitos()
     {
-        return await _crud.GetAll();
+        return await _crudService.GetAll();
     }
 
     [HttpGet("{id}")]
-        public async Task<ActionResult<Deck>> GetDeck(int id)
+        public async Task<ActionResult<Efeito>> GetEfeito(int id)
         {
-            var deck = await _crud.GetById(id);
+            var efeito = await _crudService.GetById(id);
 
-            if (deck == null)
+            if (efeito == null)
             {
                 return NotFound();
             }
 
-            return deck;
+            return efeito;
         }
 
     
         [HttpPost]
-        public async Task<ActionResult<Deck>> PostDeck(Deck deck)
+        public async Task<ActionResult<Efeito>> PostEfeito(Efeito efeito)
         {
-            var deckCriado = await _crud.Create(deck);
+            var efeitoCriado = await _crudService.Create(efeito);
 
-            return CreatedAtAction(nameof(GetDeck), new { id = deckCriado.DeckId }, deckCriado);
+            return CreatedAtAction(nameof(GetEfeito), new { id = efeitoCriado.EfeitoId }, efeitoCriado);
         }
         
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutDeck(Deck deck)
+        public async Task<IActionResult> PutEfeito(Efeito efeito)
         {
             
-            await _crud.Update(deck);
+            await _crudService.Update(efeito);
 
             return NoContent();
         }
 
     
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteDeck(int id)
+        public async Task<IActionResult> DeleteEfeito(int id)
         {
-            await _crud.Delete(id);
+            await _crudService.Delete(id);
 
             return NoContent();
         }

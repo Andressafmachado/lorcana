@@ -1,39 +1,35 @@
 using boardGame;
-using Microsoft.EntityFrameworkCore;
+using BoardGame.Domain.Repositories;
 
-namespace BoardGame.Persistence.Cartas;
-public class CartasService : ICrud
+namespace BoardGame.Application.Cartas;
+public class CartasService : ICrudService<Carta>
 {
 
-    private readonly ContextLorcana _context;
+    private readonly IRepository<Carta> _repository;
 
-    public CartasService(ContextLorcana context)
+    public CartasService(IRepository<Carta> repository)
     {
-        _context = context;
+        _repository = repository;
     }
-
-
-
-    public async Task<List<Carta>> GetCartas()
+    
+    public async Task<List<Carta>> GetAll()
     {
-        return await _context.Cartas.ToListAsync();
+        return await _repository.GetAll();
     }
-    public async Task<Carta> GetCarta(int id)
+    public async Task<Carta> GetById(int id)
     {
-        var carta = await _context.Cartas.FindAsync(id);
-        return carta ?? throw new Exception("Carta não encontrada");
+        return await _repository.GetById(id);
     }
-    public Task<Carta> PostCarta(Carta carta)
+    public async Task<Carta> Create(Carta carta)
     {
-        throw new NotImplementedException();
+        return await _repository.Create(carta);
     }
-    public Task PutCarta(Carta carta)
+    public async Task<Carta> Update(Carta carta)
     {
-        throw new NotImplementedException();
+        return await _repository.Update(carta);
     }
-    public Task DeleteCarta(int id)
+    public Task Delete(int id)
     {
-        throw new NotImplementedException();
+        return _repository.Delete(id);
     }
-
 }

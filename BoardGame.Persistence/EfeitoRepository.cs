@@ -4,44 +4,44 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BoardGame.Persistence;
 
-internal class DeckRepository : IRepository<Deck>
+internal class EfeitoRepository : IRepository<Efeito>
 {
     private readonly ContextLorcana _context;
     
-    public DeckRepository(ContextLorcana context)
+    public EfeitoRepository(ContextLorcana context)
     {
         _context = context;
     }
     
-    public async Task<List<Deck>> GetAll()
+    public async Task<List<Efeito>> GetAll()
     {
-        return await _context.Decks.ToListAsync();
+        return await _context.Efeitos.ToListAsync();
     }
 
-    public async Task<Deck> GetById(int id)
+    public async Task<Efeito> GetById(int id)
     {
-        return await _context.Decks.FindAsync(id) ?? throw new Exception("Deck não encontrado");
+        return await _context.Efeitos.FindAsync(id) ?? throw new Exception("Efeito não encontrado");
     }
 
-    public async Task<Deck> Create(Deck deck)
+    public async Task<Efeito> Create(Efeito efeito)
     {
-        await _context.Decks.AddAsync(deck);
+        await _context.Efeitos.AddAsync(efeito);
         await _context.SaveChangesAsync();
-        return deck;
+        return efeito;
     }
 
-    public async Task<Deck> Update(Deck deck)
+    public async Task<Efeito> Update(Efeito efeito)
     {
-        var deckEncontrado = _context.Decks.Find(deck.DeckId) ?? throw new Exception("Deck não encontrado"); 
-        deckEncontrado = deck;
+        var efeitoEncontrado = _context.Efeitos.Find(efeito.EfeitoId) ?? throw new Exception("Efeito não encontrado"); 
+        efeitoEncontrado = efeito;
         await _context.SaveChangesAsync();
-        return deck;
+        return efeito;
     }
 
     public async Task Delete(int id)
     {
-        var deck = _context.Decks.Find(id) ?? throw new Exception("Deck não encontrado");
-        _context.Decks.Remove(deck);
+        var efeito = _context.Efeitos.Find(id) ?? throw new Exception("Efeito não encontrado");
+        _context.Efeitos.Remove(efeito);
         await _context.SaveChangesAsync();
     }
 }

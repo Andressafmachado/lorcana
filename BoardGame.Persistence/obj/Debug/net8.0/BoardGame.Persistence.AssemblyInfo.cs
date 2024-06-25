@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BoardGame.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1961b64724b13cdf67cb06f801f979e41014ff6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b446930869cbd2489e8108947140760ea0ae76f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("BoardGame.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BoardGame.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

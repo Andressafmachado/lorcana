@@ -5,58 +5,58 @@ namespace BoardGame.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class EfeitoController : Controller
+public class JogadorController : Controller
 {
     // GET
-    private readonly ICrud<Efeito> _crud;
+    private readonly ICrudService<Jogador> _crudService;
 
-    public EfeitoController(ICrud<Efeito> crud)
+    public JogadorController(ICrudService<Jogador> crudService)
     {
-        _crud = crud;
+        _crudService = crudService;
     }
     
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Efeito>>> ListEfeitos()
+    public async Task<ActionResult<IEnumerable<Jogador>>> ListJogadores()
     {
-        return await _crud.GetAll();
+        return await _crudService.GetAll();
     }
 
     [HttpGet("{id}")]
-        public async Task<ActionResult<Efeito>> GetEfeito(int id)
+        public async Task<ActionResult<Jogador>> GetJogador(int id)
         {
-            var efeito = await _crud.GetById(id);
+            var jogador = await _crudService.GetById(id);
 
-            if (efeito == null)
+            if (jogador == null)
             {
                 return NotFound();
             }
 
-            return efeito;
+            return jogador;
         }
 
     
         [HttpPost]
-        public async Task<ActionResult<Efeito>> PostEfeito(Efeito efeito)
+        public async Task<ActionResult<Jogador>> PostJogador(Jogador jogador)
         {
-            var efeitoCriado = await _crud.Create(efeito);
+            var jogadorCriado = await _crudService.Create(jogador);
 
-            return CreatedAtAction(nameof(GetEfeito), new { id = efeitoCriado.EfeitoId }, efeitoCriado);
+            return CreatedAtAction(nameof(GetJogador), new { id = jogadorCriado.JogadorId }, jogadorCriado);
         }
         
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutEfeito(Efeito efeito)
+        public async Task<IActionResult> PutJogador(Jogador jogador)
         {
             
-            await _crud.Update(efeito);
+            await _crudService.Update(jogador);
 
             return NoContent();
         }
 
     
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEfeito(int id)
+        public async Task<IActionResult> DeleteJogador(int id)
         {
-            await _crud.Delete(id);
+            await _crudService.Delete(id);
 
             return NoContent();
         }

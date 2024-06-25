@@ -4,44 +4,44 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BoardGame.Persistence;
 
-internal class DeckRepository : IRepository<Deck>
+internal class JogadorRepository : IRepository<Jogador>
 {
     private readonly ContextLorcana _context;
     
-    public DeckRepository(ContextLorcana context)
+    public JogadorRepository(ContextLorcana context)
     {
         _context = context;
     }
     
-    public async Task<List<Deck>> GetAll()
+    public async Task<List<Jogador>> GetAll()
     {
-        return await _context.Decks.ToListAsync();
+        return await _context.Jogadores.ToListAsync();
     }
 
-    public async Task<Deck> GetById(int id)
+    public async Task<Jogador> GetById(int id)
     {
-        return await _context.Decks.FindAsync(id) ?? throw new Exception("Deck não encontrado");
+        return await _context.Jogadores.FindAsync(id) ?? throw new Exception("Jogador não encontrado");
     }
 
-    public async Task<Deck> Create(Deck deck)
+    public async Task<Jogador> Create(Jogador jogador)
     {
-        await _context.Decks.AddAsync(deck);
+        await _context.Jogadores.AddAsync(jogador);
         await _context.SaveChangesAsync();
-        return deck;
+        return jogador;
     }
 
-    public async Task<Deck> Update(Deck deck)
+    public async Task<Jogador> Update(Jogador jogador)
     {
-        var deckEncontrado = _context.Decks.Find(deck.DeckId) ?? throw new Exception("Deck não encontrado"); 
-        deckEncontrado = deck;
+        var jogadorEncontrado = _context.Jogadores.Find(jogador.JogadorId) ?? throw new Exception("Jogador não encontrado"); 
+        jogadorEncontrado = jogador;
         await _context.SaveChangesAsync();
-        return deck;
+        return jogador;
     }
 
     public async Task Delete(int id)
     {
-        var deck = _context.Decks.Find(id) ?? throw new Exception("Deck não encontrado");
-        _context.Decks.Remove(deck);
+        var jogador = _context.Jogadores.Find(id) ?? throw new Exception("Jogador não encontrado");
+        _context.Jogadores.Remove(jogador);
         await _context.SaveChangesAsync();
     }
 }

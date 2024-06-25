@@ -3,14 +3,15 @@ using boardGame;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace EFExemplo;
+namespace BoardGame.Persistence;
 
 
-public class Context : DbContext
+internal class ContextLorcana : DbContext
 {
-    public Context() {}
+    
+    public ContextLorcana() {}
 
-    public Context(DbContextOptions<Context> options): base(options) {}
+    public ContextLorcana(DbContextOptions<ContextLorcana> options): base(options) {}
 
     public string DbPath { get; }
     public DbSet<Turno> Turnos { get; set; }
@@ -25,16 +26,4 @@ public class Context : DbContext
     {
         optionsBuilder.UseNpgsql("Server=localhost;Port=5432;Database=sundaydatabase;UserId=postgres;Password=postgres;Include Error Detail=true;");
     }
-
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        base.OnModelCreating(modelBuilder);
-
-         modelBuilder.Entity<Jogador>()
-        .HasOne(j => j.Jogos)
-        .WithMany(j => j.Jogadores)
-        .HasForeignKey(j => j.JogoId);
-    }
-
 }
