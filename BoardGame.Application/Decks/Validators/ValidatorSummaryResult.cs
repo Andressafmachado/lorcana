@@ -1,3 +1,5 @@
+using BoardGame.Domain.Shared;
+
 namespace BoardGame.Application.Decks.Validators;
 
 public class ValidatorSummaryResult

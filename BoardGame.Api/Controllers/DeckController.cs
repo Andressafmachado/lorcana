@@ -1,5 +1,8 @@
 using boardGame;
+using BoardGame.Application.Decks.Commands;
 using BoardGame.Application.Decks.Validators;
+using BoardGame.Domain.Shared;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BoardGame.Api.Controllers;
@@ -8,58 +11,57 @@ namespace BoardGame.Api.Controllers;
 [Route("api/[controller]")]
 public class DeckController : Controller
 {
-    // GET
-    private readonly ICrudService<Deck> _crudService;
-    
 
-    public DeckController(ICrudService<Deck> crudService)
+    private ISender _sender;
+    public DeckController(ISender sender)
     {
-        _crudService = crudService;
+        _sender = sender;
     }
     
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<Deck>>> ListDecks()
-    {
-        return await _crudService.GetAll();
-    }
-
-    [HttpGet("{id}")]
-        public async Task<ActionResult<Deck>> GetDeck(int id)
-        {
-            var deck = await _crudService.GetById(id);
-
-            if (deck == null)
-            {
-                return NotFound();
-            }
-
-            return deck;
-        }
+    
+    // [HttpGet]
+    // public async Task<ActionResult<IEnumerable<Deck>>> ListDecks()
+    // {
+    //     return await _crudService.GetAll();
+    // }
+    //
+    // [HttpGet("{id}")]
+    //     public async Task<ActionResult<Deck>> GetDeck(int id)
+    //     {
+    //         var deck = await _crudService.GetById(id);
+    //
+    //         if (deck == null)
+    //         {
+    //             return NotFound();
+    //         }
+    //
+    //         return deck;
+    //     }
 
     
         [HttpPost]
-        public async Task<ActionResult<Deck>> PostDeck(Deck deck)
+        public async Task<ActionResult<Deck>> PostDeck(CreateDeckCommand deck)
         {
-            var deckCriado = await _crudService.Create(deck);
+            await _sender.Send(deck);
 
-            return CreatedAtAction(nameof(GetDeck), new { id = deckCriado.DeckId }, deckCriado);
+            return Ok();
         }
         
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutDeck(Deck deck)
-        {
-            
-            await _crudService.Update(deck);
-
-            return NoContent();
-        }
-
-    
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteDeck(int id)
-        {
-            await _crudService.Delete(id);
-
-            return NoContent();
-        }
+        // [HttpPut("{id}")]
+        // public async Task<IActionResult> PutDeck(Deck deck)
+        // {
+        //     
+        //     await _crudService.Update(deck);
+        //
+        //     return NoContent();
+        // }
+        //
+        //
+        // [HttpDelete("{id}")]
+        // public async Task<IActionResult> DeleteDeck(int id)
+        // {
+        //     await _crudService.Delete(id);
+        //
+        //     return NoContent();
+        // }
 }

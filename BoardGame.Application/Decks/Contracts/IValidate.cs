@@ -1,4 +1,5 @@
 using BoardGame.Application.Decks.Validators;
+using BoardGame.Domain.Shared;
 
 namespace boardGame;
 

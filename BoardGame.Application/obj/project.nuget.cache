@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "h2MvjxzEJluuWd5/ASPa6uWtIx+eK3jDru1T7oXltL/nodh0xbqlvrf3sg44ikyFaLeIrKFpp9DVjHrG3XpOZg==",
+  "dgSpecHash": "/TkgkD/hFiYJ4Mi1KNgOzzJAWCJlmBc+O9IA5zMHAp57CXJc7gHb/NCdMeIOdjWuENVeuJzJHzJor3IsTz4Fcw==",
   "success": true,
   "projectFilePath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj",
   "expectedPackageFiles": [
     "/Users/andressamachado/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/andressamachado/.nuget/packages/mediatr/10.0.1/mediatr.10.0.1.nupkg.sha512",
+    "/Users/andressamachado/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/microsoft.codeanalysis.analyzers/3.3.3/microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/microsoft.codeanalysis.common/4.5.0/microsoft.codeanalysis.common.4.5.0.nupkg.sha512",

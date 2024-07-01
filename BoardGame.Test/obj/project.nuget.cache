@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/XhbyPDYTnUsx24VN2UEd1aXrwqn69CEgaOPcZ/OcrKm1U4qXazQmQN6J43294OLw2hEC4TkbpdP7bNmAk3PxA==",
+  "dgSpecHash": "gcCcNvWedsVe9DPRBT77QDuJ0NoFSHEbklg2yMg07mPyQhcU4B35oAURj3jVWILw7XIxJG8poHDYr1v9wfkEuQ==",
   "success": true,
   "projectFilePath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Test/BoardGame.Test.csproj",
   "expectedPackageFiles": [
     "/Users/andressamachado/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
+    "/Users/andressamachado/.nuget/packages/mediatr/10.0.1/mediatr.10.0.1.nupkg.sha512",
+    "/Users/andressamachado/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/microsoft.codecoverage/17.6.0/microsoft.codecoverage.17.6.0.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/microsoft.entityframeworkcore/8.0.6/microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.6/microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",

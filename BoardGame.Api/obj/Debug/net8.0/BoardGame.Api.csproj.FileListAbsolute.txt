@@ -158,3 +158,6 @@
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Infrastructure.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Infrastructure.pdb
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/MediatR.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/MediatR.Contracts.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
