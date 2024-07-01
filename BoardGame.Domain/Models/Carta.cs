@@ -12,7 +12,7 @@ public class Carta
     public string? Descrição { get; set; }
     public int? EfeitoId { get; set; }
     public Efeito? Efeito { get; set; }
-    public int DeckId { get; set; }
+    public int? DeckId { get; set; }
     public Deck? Deck { get; set; }
     public int Número { get; set; }
     public bool PodeVirarTinta { get; set; }

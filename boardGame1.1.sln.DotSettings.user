@@ -37,5 +37,9 @@
     &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.Deck.Validators.DeckMaximumCardsCopyTest.ValidateMaximumCardsCopy_WhenDeckHasLessThanFourCopiesOfTheSameCard_ShouldReturnTrue&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.Deck.Validators.DeckMaximumCardsCopyTest&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.Deck.Validators.DeckNullOrEmptyTest.Validate_WhenDeckIsNull_ShouldReturnFalse&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.Deck.Validators.DeckValidateTest.Validate_WhenDeckIsNull_ShouldReturnFalse&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.Deck.Validators.DeckValidateTest.Validate_WhenDeckIsValid_ShouldReturnTrue&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.Deck.Validators.DeckValidateTest.Validate_WhenDeckHasLessThan60Cards_ShouldReturnFalse&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FFA79A2E-2A0B-4AF6-995E-65F67232294A::net8.0::BoardGame.Test.Deck.Validators.DeckValidateTest.Validate_WhenCardsInDeckIsNull_ShouldReturnFalse&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

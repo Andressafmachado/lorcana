@@ -155,3 +155,6 @@
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/obj/Debug/net8.0/BoardGame.Api.pdb
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/obj/Debug/net8.0/BoardGame.Api.genruntimeconfig.cache
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/obj/Debug/net8.0/ref/BoardGame.Api.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Infrastructure.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Infrastructure.pdb
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/Newtonsoft.Json.dll

@@ -1,9 +1,11 @@
 using boardGame;
 using BoardGame.Application.Cartas;
 using BoardGame.Application.Decks;
+using BoardGame.Application.Decks.Validators;
 using BoardGame.Application.Efeitos;
 using BoardGame.Application.Jogadores;
 using BoardGame.Persistence;
+using Infrastructure.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,8 @@ builder.Services.AddTransient<ICrudService<Carta>, CartasService>();
 builder.Services.AddTransient<ICrudService<Deck>, DeckService>();
 builder.Services.AddTransient<ICrudService<Efeito>, EfeitoService>();
 builder.Services.AddTransient<ICrudService<Jogador>, JogadorService>();
+builder.Services.AddTransient<List<IValidate<Deck>>>(c => new List<IValidate<Deck>> {new DeckMissingCardsValidator(), new DeckAmountCardsValidator()});
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -27,6 +31,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseMiddleware<DeckValidationMiddleware>();
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();

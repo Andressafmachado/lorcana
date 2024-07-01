@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BoardGame.Infrastructure\BoardGame.Infrastructure.csproj" />
     <ProjectReference Include="..\BoardGame.Persistence\BoardGame.Persistence.csproj" />
     <ProjectReference Include="..\BoardGame.Application\BoardGame.Application.csproj" />
   </ItemGroup>

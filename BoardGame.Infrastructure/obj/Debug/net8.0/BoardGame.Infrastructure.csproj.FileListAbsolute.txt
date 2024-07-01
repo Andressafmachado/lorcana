@@ -10,3 +10,14 @@
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/obj/Debug/net8.0/refint/BoardGame.Infrastructure.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/obj/Debug/net8.0/BoardGame.Infrastructure.pdb
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/obj/Debug/net8.0/ref/BoardGame.Infrastructure.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Abstractions.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/bin/Debug/net8.0/System.IO.Pipelines.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/bin/Debug/net8.0/Microsoft.Extensions.Features.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/bin/Debug/net8.0/Microsoft.Net.Http.Headers.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/bin/Debug/net8.0/Microsoft.AspNetCore.Connections.Abstractions.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/obj/Debug/net8.0/BoardGame.Infrastructure.csproj.AssemblyReference.cache
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/obj/Debug/net8.0/BoardGame.Infrastructure.csproj.CopyComplete
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/bin/Debug/net8.0/BoardGame.Application.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/bin/Debug/net8.0/BoardGame.Domain.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/bin/Debug/net8.0/BoardGame.Application.pdb
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/bin/Debug/net8.0/BoardGame.Domain.pdb
