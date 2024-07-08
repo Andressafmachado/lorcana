@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9Y5lqzMQILGoVqWCbLMevEpUTOaVWnEpBA0vQUhLL3nKL0WNNt65SQMK4PlXITDPLIzL2GQcWPzz3EP0xX/6vw==",
+  "dgSpecHash": "NcJ1ebQ/AaIsp5wckqAPs8gy3sPCmqRYNOMi2Rmgvbw/uaqLCF4doIA+3YWtX/jKFz3t33kqGMf1X7AxiKWQJw==",
   "success": true,
   "projectFilePath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/BoardGame.Api.csproj",
   "expectedPackageFiles": [
+    "/Users/andressamachado/.nuget/packages/fluentvalidation/11.2.2/fluentvalidation.11.2.2.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/mediatr/11.0.0/mediatr.11.0.0.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",

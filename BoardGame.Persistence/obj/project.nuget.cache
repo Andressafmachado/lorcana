@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5JlJ/X2Tnv9P1PuFgQ8UFMDsu7gIIbaaxt9FdQpQSWq3OsoTPcqpNBFjWJheihtY7Yt+ejEiIhKqxradooE4vQ==",
+  "dgSpecHash": "mYN0ss1h57Jm/MGzAScuDYZHtMPgu8CJjh7+4dYeNcUTvnvAkSYmT7WhT+or4pdOgQg3buxmr14XwTTbJE7Pkg==",
   "success": true,
   "projectFilePath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Persistence/BoardGame.Persistence.csproj",
   "expectedPackageFiles": [
+    "/Users/andressamachado/.nuget/packages/fluentvalidation/11.2.2/fluentvalidation.11.2.2.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/mediatr/10.0.1/mediatr.10.0.1.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",

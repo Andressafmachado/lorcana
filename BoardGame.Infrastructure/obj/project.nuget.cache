@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/tAtCPMj3gvGbfuo44B89XTpdseR9KKq8q9kOagYiH3liv/3LnyXg14W5GMFKzxocHxeNBY2/dHpWdzeGuvo/Q==",
+  "dgSpecHash": "4nz0djUDb04TLFUYf+K3S6Tyhu8e+E8S64shbwBQJgNJQ6x42xd1x6YHH4yVDvipMNwSNeJ6x2LtRP6tnC3Evg==",
   "success": true,
   "projectFilePath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Infrastructure/BoardGame.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "/Users/andressamachado/.nuget/packages/fluentvalidation/11.2.2/fluentvalidation.11.2.2.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/mediatr/10.0.1/mediatr.10.0.1.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/microsoft.entityframeworkcore/8.0.6/microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
