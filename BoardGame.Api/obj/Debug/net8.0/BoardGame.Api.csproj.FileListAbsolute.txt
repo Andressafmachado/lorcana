@@ -50,7 +50,11 @@
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Api.runtimeconfig.json
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Api.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Api.pdb
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/FluentValidation.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/Humanizer.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/MediatR.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/MediatR.Contracts.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
@@ -64,6 +68,7 @@
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/Microsoft.OpenApi.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/Mono.TextTemplating.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/Newtonsoft.Json.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/Npgsql.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
@@ -129,7 +134,9 @@
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Application.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Domain.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Infrastructure.dll
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Persistence.dll
+/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Infrastructure.pdb
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Persistence.pdb
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Application.pdb
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Domain.pdb
@@ -155,10 +162,3 @@
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/obj/Debug/net8.0/BoardGame.Api.pdb
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/obj/Debug/net8.0/BoardGame.Api.genruntimeconfig.cache
 /Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/obj/Debug/net8.0/ref/BoardGame.Api.dll
-/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Infrastructure.dll
-/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/BoardGame.Infrastructure.pdb
-/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/Newtonsoft.Json.dll
-/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/MediatR.dll
-/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/MediatR.Contracts.dll
-/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
-/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Api/bin/Debug/net8.0/FluentValidation.dll

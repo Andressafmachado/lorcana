@@ -1,5 +1,7 @@
+using System.Reflection;
 using boardGame;
 using BoardGame.Application.Abstractions;
+using BoardGame.Application.Behaviors;
 using BoardGame.Application.Cartas;
 using BoardGame.Application.Decks;
 using BoardGame.Application.Decks.Commands;
@@ -7,6 +9,7 @@ using BoardGame.Application.Decks.Validators;
 using BoardGame.Application.Efeitos;
 using BoardGame.Application.Jogadores;
 using BoardGame.Persistence;
+using FluentValidation;
 using Infrastructure.Middleware;
 using MediatR;
 
@@ -19,7 +22,14 @@ builder.Services.AddTransient<ICrudService<Deck>, DeckService>();
 builder.Services.AddTransient<ICrudService<Efeito>, EfeitoService>();
 builder.Services.AddTransient<ICrudService<Jogador>, JogadorService>();
 // builder.Services.AddTransient<List<IValidate<Deck>>>(c => new List<IValidate<Deck>> {new DeckMissingCardsValidator(), new DeckAmountCardsValidator()});
-builder.Services.AddMediatR(BoardGame.Application.AssemblyReference.Assembly);
+// builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationPipelineBehavior<,>));
+builder.Services.AddValidatorsFromAssembly(BoardGame.Application.AssemblyReference.Assembly);
+
+builder.Services.AddMediatR(cfg=>{
+    cfg.RegisterServicesFromAssembly(BoardGame.Application.AssemblyReference.Assembly);
+    cfg.AddOpenBehavior(typeof(ValidationPipelineBehavior<,>));
+});
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "2qmZiwlfOdrxUb8pXRmgiGBIrGuL98+E6GE/D5+qZzY1+O2nk4VBssEu6ImrBm4xfJW3ECmJvoXB5gVodco45g==",
+  "dgSpecHash": "1NB3Q0y8hoNi5dWAP4FMahldLvl9x3y1wfvjsLpfltWhH2v6Jx6KCJgtheDIpGXz0BvsMF6N6BGwn/VZuD3Bkw==",
   "success": true,
   "projectFilePath": "/Users/andressamachado/Desktop/learningC#/boardGame1.1/BoardGame.Application/BoardGame.Application.csproj",
   "expectedPackageFiles": [
-    "/Users/andressamachado/.nuget/packages/fluentvalidation/11.2.2/fluentvalidation.11.2.2.nupkg.sha512",
+    "/Users/andressamachado/.nuget/packages/fluentvalidation/11.9.2/fluentvalidation.11.9.2.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
-    "/Users/andressamachado/.nuget/packages/mediatr/10.0.1/mediatr.10.0.1.nupkg.sha512",
-    "/Users/andressamachado/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/Users/andressamachado/.nuget/packages/mediatr/12.3.0/mediatr.12.3.0.nupkg.sha512",
+    "/Users/andressamachado/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/microsoft.codeanalysis.analyzers/3.3.3/microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "/Users/andressamachado/.nuget/packages/microsoft.codeanalysis.common/4.5.0/microsoft.codeanalysis.common.4.5.0.nupkg.sha512",

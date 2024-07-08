@@ -1,3 +1,5 @@
+using System.Threading;
+using System.Threading.Tasks;
 using boardGame;
 using MediatR;
 
@@ -12,10 +14,11 @@ internal sealed class CreateDeckCommandHandler : IRequestHandler<CreateDeckComma
         _crudService = crudService;
     }
     
-    public async Task<Unit> Handle(CreateDeckCommand request, CancellationToken cancellationToken)
+   
+
+    public async Task Handle(CreateDeckCommand request, CancellationToken cancellationToken)
     {
-        
-        var deck = new Deck
+         var deck = new Deck
         {
             Nome = request.Name,
             DeckId = request.DeckId
@@ -24,9 +27,9 @@ internal sealed class CreateDeckCommandHandler : IRequestHandler<CreateDeckComma
         var crud =  await _crudService.Create(deck);
         if (crud is null)
         {
-            return Unit.Value;
+            return;
         }
        
-        return Unit.Value;
+        return ;
     }
 }
